@@ -1,0 +1,165 @@
+@font-face {
+    font-family: customFont;
+    src: url(./fonts/AlumniSansPinstripe-Regular.ttf);
+}
+
+@font-face {
+    font-family: customFontItalic;
+    src: url(./fonts/AlumniSansPinstripe-Italic.ttf);
+}
+
+
+:root {
+    --background-image: url(./images/pawel-czerwinski-OOFSqPWjCt0-unsplash.jpg);
+    --odin-image: url(./images/odin-lined.png);
+    color: white;
+    background-color: #050f19;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin: 0px;
+    font-family: customFont;
+}
+/*-------sidebar---------*/
+img {
+    height: 150px;
+}
+.background > span {
+    font-size: 100px;
+}
+
+.sidebar-container {
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 33vw;
+    font-family: customFont;
+}
+
+.background {
+    background-color: rgba(0, 0, 0, 0.5) ;
+    position: relative;
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*---------------------------*/
+
+.body {
+    height: auto;
+}
+
+.formy {
+    width: 67vw;
+    margin: 0px;
+    gap: 0px;
+    background-color: #0a1c30;
+}
+
+.form-header {
+    background-color: #0a1c30;
+    height: 37vh;
+    margin: 0px;
+    font-size: 30px;
+    padding-left: 50px;
+}
+.top {
+    padding-top: 15vh;
+}
+.bot {
+    padding-top: 15px;
+}
+
+p {
+    margin: 0px;
+}
+
+.form>p {
+    margin: 0px;
+    padding: 15px 0px;
+    font-size: 3rem
+}
+
+.form {
+    background-color: #0c213a;
+    box-shadow: 0px 10px 5px -5px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    height: 33vh, auto;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    transition: 1s;
+    padding-bottom: 2rem;
+}
+
+.form:hover {
+    margin-left: 20px;
+    transition: 1s;
+}
+
+.form-background {
+    font-size: 1.4rem;
+    gap: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+label {
+    position: relative;
+    width: 15rem;
+    padding-bottom: 15px;
+    display: inline;
+}
+
+input {
+    width: 15rem ;
+    height: 1.5rem;
+    border-radius: 5px;
+    border: 0px solid lightgrey;
+}
+input:focus {
+    border: 1px solid #d23c14;
+}
+
+.create-button {
+    padding-left: 50px;
+}
+
+button {
+    appearance: none;
+    background-color: #d23c14;
+    border: 0px;
+    height: 50px;
+    width: 250px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.4rem;
+    font-family: customFont;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+form+div {
+    padding-left: 50px;
+    margin-top: 15px;
+    font-size: 1.4rem;
+}
+
+a, a:visited {
+    color: #d23c14;
+    font-size: 1.7rem;
+}
+a:hover {
+    cursor: pointer;
+}

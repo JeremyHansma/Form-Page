@@ -5,48 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Almighty Form</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <main>
-        <section class="sidebar">
-            <img src="" alt="background"> 
-            <img src="" alt="logo">
-            <span>ODIN</span> 
-        </section>
-        <section>
-            <div class="form-header">
-                <p>This is not a real online service! You know you need something
+    <div class="sidebar-container">
+        <div class="background">
+                <img src="./images/odin-lined.png" alt="logo">
+                <span>ODIN</span> 
+        </div>
+    </div>
+    <div class="formy">
+        <div class="form-header">
+            <p class="top">This is not a real online service! You know you need something
                     like this in your life to help you realize your deepest dreams.
                     Sign up now to get started.
-                </p>
-                <p>You know you want to.</p>
-            </div>
-            <div>
-                <form action="">
-                    <h1>Let's do this!</h1>
+            </p>
+            <p class="bot">You know you want to.</p>
+        </div>
+        <div class="body">
+            <form action="#">
+                <section class="form">
+                    <p>Let's do this!</p>
                     <section class="form-background">
-                        <section>
-                            <label for="first_name">FIRST NAME</label>
-                            <input type="text" name="first_name" id="f_name">
-                            <label for="mail">EMAIL</label>
-                            <input type="email" name="mail" id="mail">
-                            <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="pword">
-                        </section>
-                        <section>
-                            <label for="last_name">LAST NAME</label>
-                            <input type="text" name="last_name" id="l_name">
-                            <label for="phone_num"></label>
-                            <input type="number" name="phone_num" id="p_num">
-                            <label for="password_confirm">CONFIRM PASSWORD</label>
-                            <input type="password" name="password_confirm" id="pword_confirm">
-                        </section>
+                            <label for="first_name">FIRST NAME
+                                <input type="text" name="first_name" id="f_name">
+                            </label>    
+                             <label for="last_name">LAST NAME
+                                <input type="text" name="last_name" id="l_name">
+                            </label>                
+                            <label for="mail">EMAIL
+                                <input type="email" name="mail" id="mail">
+                            </label>
+                            <label for="phone_num">PHONE NUMBER
+                                <input type="tel" name="phone_num" id="p_num">
+                            </label>
+                            <label for="password">PASSWORD
+                                <input type="password" name="password" id="pword">
+                            </label>
+                            <label for="password_confirm">CONFIRM PASSWORD
+                                <input type="password" name="password_confirm" id="pword_confirm">
+                            </label>
                     </section>
+                </section>
+                <section class="create-button">
                     <button type="submit">Create Account</button>
-                </form>
-                <div><span>Already have and account? <a href="./README.md">Log in</a></span></div>
-            </div>
-        </section>
-    </main>
+                </section>
+            </form>
+            <div><span>Already have and account? <a href="./README.md">Log in</a></span></div>
+        </div>
+    </div>
 </body>
 </html>
